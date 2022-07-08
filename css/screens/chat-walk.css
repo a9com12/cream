@@ -1,0 +1,106 @@
+.chat-screen {
+    background-color: aliceblue;
+    height:180vh;
+    margin-top:140px;
+    z-index: 99;
+   
+    
+}
+
+.main-chat {
+    padding: 0px 5px;
+    animation: fadeIn 2s linear;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity:0;
+    }
+    to {
+        transform: none;
+        opacity:1;
+    }
+}
+
+
+
+.chat__timestamp {
+    margin:30px 50px;
+    background-color: var(--blue);
+    color:white;
+    padding:3px;
+    display:flex;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+    opacity:0.8;
+    box-sizing: border-box;
+    order:0;
+}
+
+.reply {
+    display:flex;
+    width:100%;
+    box-sizing: border-box;
+    position:fixed;
+    padding:10px 15px;
+    background-color: var(--blue);
+    bottom:0;
+    align-items: center;
+    
+}
+
+.reply__column:first-child {
+ width: 10%;
+}
+.reply__column:last-child {
+    width: 90%;
+    position:relative;
+   }
+
+.reply__column:first-child i {
+    color:white;
+    margin-right: 5px;
+   
+   
+}
+
+
+
+
+.reply__column:last-child input {
+   border-radius: 20px;
+   border: none;
+   padding:10px 70px;
+}
+
+.reply__column:last-child input::placeholder {
+    opacity:0.6;
+    position:absolute;
+    left:10px;
+
+    
+}
+
+
+.reply__column:last-child .fa-arrow-up {
+    position:absolute;
+    right:40px;
+    top:5px;
+    background-color: var(--blue);
+    color:white;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    
+}
+
+.reply__column:last-child .fa-smile-wink {
+    position:absolute;
+    right:70px;
+    top:10px;
+}

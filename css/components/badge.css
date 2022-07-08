@@ -1,0 +1,27 @@
+.badge {
+    background-color: tomato;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    animation: notificationAnimation 5s ease-in-out infinite;
+
+}
+
+
+@keyframes notificationAnimation {
+    0% {
+      transform: none;
+    }
+    50% {
+      transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+      transform: none;
+    }
+  }
+
